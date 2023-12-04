@@ -8,35 +8,33 @@ import android.view.ViewGroup
 import com.syntax_institut.whatssyntax.databinding.FragmentHomeBinding
 import com.syntax_institut.whatssyntax.databinding.FragmentSecondBinding
 
-class SecondFragment : Fragment() {
+class HomeFragment : Fragment() {
 
-    private lateinit var binding: FragmentSecondBinding
-
-
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        //Auslesen der Argumente
-        arguments?.let {
-
-
-        }
-    }
+    private lateinit var binding: FragmentHomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        binding = FragmentSecondBinding.inflate(inflater, container, false)
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //binding.textView2.text = ""
-    }
+        /*binding.weiterBTN.setOnClickListener {
 
+            //Navcontroller laden
+            val navController = findNavController()
+
+            //Navigiere zu destination
+            navController.navigate(
+                HomeFragmentDirections.actionHomeFragmentToSecondFragment(
+                    "Hallo",
+                    50
+                )
+            )
+        } */
+    }
 }
