@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.syntax_institut.whatssyntax.databinding.FragmentHomeBinding
-import com.syntax_institut.whatssyntax.databinding.FragmentSecondBinding
 
-class SecondFragment : Fragment() {
 
-    private lateinit var binding: FragmentSecondBinding
+class HomeFragment : Fragment() {
+
+    private lateinit var binding: FragmentHomeBinding
 
 
 
@@ -29,7 +29,7 @@ class SecondFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        binding = FragmentSecondBinding.inflate(inflater, container, false)
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
