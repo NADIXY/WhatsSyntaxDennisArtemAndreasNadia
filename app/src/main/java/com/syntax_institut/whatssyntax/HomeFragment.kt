@@ -6,24 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.syntax_institut.whatssyntax.databinding.FragmentHomeBinding
-
+import com.syntax_institut.whatssyntax.databinding.FragmentSecondBinding
 
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
-
-
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        //Auslesen der Argumente
-        arguments?.let {
-
-
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,7 +23,18 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //binding.textView2.text = ""
-    }
+        /*binding.weiterBTN.setOnClickListener {
 
+            //Navcontroller laden
+            val navController = findNavController()
+
+            //Navigiere zu destination
+            navController.navigate(
+                HomeFragmentDirections.actionHomeFragmentToSecondFragment(
+                    "Hallo",
+                    50
+                )
+            )
+        } */
+    }
 }

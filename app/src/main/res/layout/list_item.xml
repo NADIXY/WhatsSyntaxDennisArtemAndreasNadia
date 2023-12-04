@@ -49,6 +49,14 @@
             app:layout_constraintStart_toEndOf="@+id/profilIV"
             app:layout_constraintTop_toBottomOf="@+id/tvItemName"
             tools:text="+49123498765" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="73dp"
+            android:layout_height="77dp"
+            app:srcCompat="@drawable/pp_01"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="4dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
