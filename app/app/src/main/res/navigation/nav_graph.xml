@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.syntax_institut.whatssyntax.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.syntax_institut.whatssyntax.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <argument
+            android:name="text"
+            app:argType="string" />
+        <argument
+            android:name="zahl"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.syntax_institut.whatssyntax.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.syntax_institut.whatssyntax.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
+</navigation>
