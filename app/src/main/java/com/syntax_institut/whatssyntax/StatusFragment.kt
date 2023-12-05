@@ -4,18 +4,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.syntax_institut.whatssyntax.databinding.FragmentSecondBinding
-import com.syntax_institut.whatssyntax.databinding.FragmentThridBinding
 
-class ThirdFragment : Fragment() {
+class StatusFragment : Fragment() {
 
-    private lateinit var binding: FragmentThridBinding
+    private lateinit var binding: FragmentStatusBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_thrid, container, false)
+        return inflater.inflate(R.layout.fragment_status.xml, container, false)
     }
 }
