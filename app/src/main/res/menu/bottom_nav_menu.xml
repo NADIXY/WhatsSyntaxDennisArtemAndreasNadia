@@ -14,11 +14,15 @@
 
     <item
         android:id="@+id/settingsFragment"
+        android:icon="@drawable/icon_call"
+        android:title="Call" />
+    <item
+        android:id="@+id/settingsFragment"
         android:icon="@drawable/icon_settings"
         android:title="Setting" />
-
     <item
-        android:id="@+id/secondFragment"
+        android:id="@+id/settingsFragment"
         android:icon="@drawable/icon_chat"
         android:title="Chat" />
+
 </menu>
