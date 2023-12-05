@@ -6,4 +6,22 @@
     android:layout_height="match_parent"
     android:background="@color/tuerkis">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_call"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/item_call" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
