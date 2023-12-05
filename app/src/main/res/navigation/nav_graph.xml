@@ -23,8 +23,13 @@
         android:name="com.syntax_institut.whatssyntax.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <activity
+        android:id="@+id/mainActivity3"
+        android:name="com.syntax_institut.whatssyntax.MainActivity"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/thirdFragment2"
-        android:name="com.syntax_institut.whatssyntax.ThirdFragment"
-        android:label="ThirdFragment" />
+        android:id="@+id/statusFragmentFragment"
+        android:name="com.syntax_institut.whatssyntax.StatusFragmentFragment"
+        android:label="StatusFragmentFragment" />
 </navigation>

@@ -1,11 +1,16 @@
 package com.syntax_institut.whatssyntax
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation.findNavController
+import com.syntax_institut.whatssyntax.databinding.FragmentHomeBinding
+import com.syntax_institut.whatssyntax.databinding.FragmentSecondBinding
+import com.syntax_institut.whatssyntax.databinding.FragmentStatusBinding
 
-class StatusFragment : Fragment() {
+class StatusFragmentFragment : Fragment() {
 
     private lateinit var binding: FragmentStatusBinding
 
@@ -13,7 +18,25 @@ class StatusFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_status.xml, container, false)
+        binding = FragmentStatusBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        /*binding.weiterBTN.setOnClickListener {
+
+            //Navcontroller laden
+            val navController = findNavController()
+
+            //Navigiere zu destination
+            navController.navigate(
+                HomeFragmentDirections.actionHomeFragmentToSecondFragment(
+                    "Hallo",
+                    50
+                )
+            )
+        } */
     }
 }
