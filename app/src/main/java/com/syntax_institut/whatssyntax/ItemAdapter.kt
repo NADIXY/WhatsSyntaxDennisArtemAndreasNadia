@@ -5,11 +5,12 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.syntax_institut.whatssyntax.data.model.Call
+import com.syntax_institut.whatssyntax.data.model.Contact
 import com.syntax_institut.whatssyntax.databinding.ListItemBinding
 
 class ItemAdapter (
     private val context: Context,
-    private val dataset: List<Call>
+    private val dataset: List<Contact>
 
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
