@@ -8,16 +8,17 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation.findNavController
 import com.syntax_institut.whatssyntax.databinding.FragmentHomeBinding
 import com.syntax_institut.whatssyntax.databinding.FragmentSecondBinding
+import com.syntax_institut.whatssyntax.databinding.FragmentStatusBinding
 
-class HomeFragment : Fragment() {
+class StatusFragmentFragment : Fragment() {
 
-    private lateinit var binding: FragmentHomeBinding
+    private lateinit var binding: FragmentStatusBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding = FragmentStatusBinding.inflate(inflater, container, false)
         return binding.root
     }
 

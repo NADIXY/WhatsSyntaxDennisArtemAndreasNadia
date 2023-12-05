@@ -1,19 +1,20 @@
-package com.syntax_institut.whatssyntax.adapter
+package com.syntax_institut.whatssyntax
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.syntax_institut.whatssyntax.data.model.Call
+import com.syntax_institut.whatssyntax.data.model.Contact
 import com.syntax_institut.whatssyntax.databinding.ListItemBinding
 
 class ItemAdapter (
     private val context: Context,
-    private val dataset: List<Call>
+    private val dataset: List<Contact>
 
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
-    inner class ItemViewHolder( binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root)
+    inner class ItemViewHolder(val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val binding = ListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -25,7 +26,7 @@ class ItemAdapter (
     }
 
     override fun getItemCount(): Int {
-       return dataset.size
+        return dataset.size
     }
 }
 

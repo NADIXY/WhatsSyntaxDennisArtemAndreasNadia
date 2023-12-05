@@ -17,24 +17,28 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/profilIV"
-            android:layout_width="wrap_content"
-            android:layout_height="56dp"
-            android:layout_marginStart="32dp"
-            android:adjustViewBounds="true"
+            android:id="@+id/iv_picture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home" />
 
         <TextView
             android:id="@+id/tvItemName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:textColor="?attr/colorOnSecondary"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/profilIV"
+            app:layout_constraintHorizontal_bias="0.708"
+            app:layout_constraintStart_toEndOf="@+id/iv_picture"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Max Mustermann" />
 
@@ -46,17 +50,15 @@
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/profilIV"
+            app:layout_constraintHorizontal_bias="0.823"
+            app:layout_constraintStart_toEndOf="@+id/iv_picture"
             app:layout_constraintTop_toBottomOf="@+id/tvItemName"
             tools:text="+49123498765" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="73dp"
-            android:layout_height="77dp"
-            app:srcCompat="@drawable/pp_01"
-            tools:layout_editor_absoluteX="32dp"
-            tools:layout_editor_absoluteY="4dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
+
+
+
+
