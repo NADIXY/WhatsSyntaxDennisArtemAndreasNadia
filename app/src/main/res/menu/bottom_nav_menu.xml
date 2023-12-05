@@ -10,7 +10,7 @@
     <item
         android:id="@+id/thirdFragment"
         android:icon="@drawable/icon_status"
-        android:title="Third" />
+        android:title="Status" />
 
     <item
         android:id="@+id/settingsFragment"
