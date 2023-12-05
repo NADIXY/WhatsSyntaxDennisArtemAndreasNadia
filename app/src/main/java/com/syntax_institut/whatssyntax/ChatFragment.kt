@@ -5,17 +5,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.syntax_institut.whatssyntax.databinding.FragmentStatusBinding
+import com.syntax_institut.whatssyntax.databinding.FragmentChatBinding
+import com.syntax_institut.whatssyntax.databinding.FragmentProfilBinding
 
-class StatusFragment : Fragment() {
+class ChatFragment: Fragment() {
 
-    private lateinit var binding: FragmentStatusBinding
+    private lateinit var binding: FragmentChatBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        binding = FragmentStatusBinding.inflate(inflater, container, false)
+        binding = FragmentChatBinding.inflate(inflater, container, false)
         return binding.root
     }
 

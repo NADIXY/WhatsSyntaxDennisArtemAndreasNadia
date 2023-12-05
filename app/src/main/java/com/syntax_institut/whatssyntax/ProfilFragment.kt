@@ -5,17 +5,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.syntax_institut.whatssyntax.databinding.FragmentProfilBinding
 import com.syntax_institut.whatssyntax.databinding.FragmentStatusBinding
 
-class StatusFragment : Fragment() {
+class ProfilFragment: Fragment() {
 
-    private lateinit var binding: FragmentStatusBinding
+    private lateinit var binding: FragmentProfilBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        binding = FragmentStatusBinding.inflate(inflater, container, false)
+        binding = FragmentProfilBinding.inflate(inflater, container, false)
         return binding.root
     }
 

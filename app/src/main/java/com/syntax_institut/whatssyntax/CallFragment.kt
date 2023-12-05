@@ -5,37 +5,24 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.syntax_institut.whatssyntax.databinding.FragmentSecondBinding
+import com.syntax_institut.whatssyntax.databinding.FragmentCallBinding
+import com.syntax_institut.whatssyntax.databinding.FragmentProfilBinding
 
-class SecondFragment : Fragment() {
+class CallFragment: Fragment() {
 
-    private lateinit var binding: FragmentSecondBinding
-
-
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        //Auslesen der Argumente
-        arguments?.let {
-
-
-        }
-    }
+    private lateinit var binding: FragmentCallBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        binding = FragmentSecondBinding.inflate(inflater, container, false)
+        binding = FragmentCallBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //binding.textView2.text = ""
-    }
 
+    }
 }
