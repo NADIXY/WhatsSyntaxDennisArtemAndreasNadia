@@ -3,25 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/statusFragment2">
-
+    app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/statusFragment2"
+        android:id="@+id/homeFragment"
+        android:name="com.syntax_institut.whatssyntax.HomeFragment"
+        android:label="HomeFragment" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_callFragment"
+            app:destination="@id/callFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statusFragment"
         android:name="com.syntax_institut.whatssyntax.StatusFragment"
         android:label="StatusFragment"
-        tools:layout="@layout/fragment_status">
+        tools:layout="@layout/fragment_status" >
         <action
-            android:id="@+id/action_statusFragment2_to_contactFragment"
+            android:id="@+id/action_statusFragment_to_contactFragment"
             app:destination="@id/contactFragment" />
     </fragment>
     <fragment
+        android:id="@+id/callFragment"
+        android:name="com.syntax_institut.whatssyntax.CallFragment"
+        android:label="CallFragment"
+        tools:layout="@layout/fragment_call" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.syntax_institut.whatssyntax.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.syntax_institut.whatssyntax.ChatFragment"
+        android:label="ChatFragment" />
+    <fragment
         android:id="@+id/contactFragment"
         android:name="com.syntax_institut.whatssyntax.ContactFragment"
-        android:label="ContactFragment"
-        tools:layout="@layout/fragment_contact">
+        android:label="ContactFragment" >
         <argument
             android:name="position"
             app:argType="integer" />
     </fragment>
+
 </navigation>

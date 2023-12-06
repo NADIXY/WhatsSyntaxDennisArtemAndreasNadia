@@ -27,7 +27,7 @@ class StatusAdapter (
         val item = dataset[position]
         holder.binding.tvItemName.text = item.name
         holder.binding.contactCard.setOnClickListener {
-           holder.itemView.findNavController().navigate(StatusFragmentDirections.actionStatusFragment2ToContactFragment(position))
+           holder.itemView.findNavController().navigate(StatusFragmentDirections.actionStatusFragmentToContactFragment(position))
         }
 
     }
