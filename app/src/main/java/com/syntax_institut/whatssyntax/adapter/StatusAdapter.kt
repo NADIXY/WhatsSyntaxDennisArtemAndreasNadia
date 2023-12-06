@@ -1,18 +1,18 @@
 package com.syntax_institut.whatssyntax.adapter
 
-import android.content.Context
+
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.syntax_institut.whatssyntax.StatusFragment
+
 import com.syntax_institut.whatssyntax.StatusFragmentDirections
 import com.syntax_institut.whatssyntax.data.model.Contact
 import com.syntax_institut.whatssyntax.databinding.ListItemBinding
 
 class StatusAdapter (
 
-    private val dataset: List<Contact>
+    internal val dataset: List<Contact>
 
 ) : RecyclerView.Adapter<StatusAdapter.ItemViewHolder>() {
 
