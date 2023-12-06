@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.syntax_institut.whatssyntax.adapter.StatusAdapter
 import com.syntax_institut.whatssyntax.databinding.FragmentStatusBinding
 
 class StatusFragment : Fragment() {
@@ -21,6 +22,13 @@ class StatusFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val mainActivity = activity as MainActivity
+
+        var dataset = mainActivity.datasource.getContacts()
+        var adapter = StatusAdapter(dataset)
+
+        binding.rvStatus.adapter = adapter
 
 
     }

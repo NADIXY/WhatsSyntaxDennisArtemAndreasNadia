@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation.findNavController
 import com.syntax_institut.whatssyntax.databinding.FragmentHomeBinding
-import com.syntax_institut.whatssyntax.databinding.FragmentSecondBinding
+
 
 class HomeFragment : Fragment() {
 

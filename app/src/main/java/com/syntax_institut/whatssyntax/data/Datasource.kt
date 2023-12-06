@@ -13,7 +13,7 @@ class Datasource {
     private var profile = Profile("Max Mustermann", "666-555-4444", R.drawable.pp_01)
 
     private val contactList = listOf(
-        Contact("Anna Smith", "123-456-7890", R.drawable.pp_01, Status("Habe Steinpilze abzugeben.")),
+        Contact("Anna Smith", "123-456-7890", R.drawable.pp_01, Status("Habe Schneepilze abzugeben.")),
         Contact("John Doe", "321-654-0987", R.drawable.pp_02, null),
         Contact("Emily Johnson", "111-222-3333", R.drawable.pp_03, null),
         Contact("Tom Brown", "555-666-7777", R.drawable.pp_04, null),
@@ -26,7 +26,7 @@ class Datasource {
         Contact("Lucas Nelson", "111-999-8888", R.drawable.pp_04, null),
         Contact("Nina Lewis", "777-888-9999", R.drawable.pp_05, null),
         Contact("Eva Clark", "222-333-4444", R.drawable.pp_06, null),
-        Contact("Tim Scott", "555-444-3333", R.drawable.pp_07, Status("Liege krank im Bett, nur Notfälle heute.")),
+        Contact("Tim Scott", "555-444-3333", R.drawable.pp_07, Status("Liege krank im Bett, nur Notfälle im Neuem Jahr.")),
         Contact("Oliver King", "666-555-4444", R.drawable.pp_01, null),
         Contact("Julia Hill", "777-666-5555", R.drawable.pp_02, null),
         Contact("Max Allen", "888-777-6666", R.drawable.pp_03, null),
