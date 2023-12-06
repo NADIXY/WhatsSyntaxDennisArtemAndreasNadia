@@ -18,7 +18,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/iv_call_benutzerbild"
+            android:id="@+id/ivCallBenutzerbild"
             android:layout_width="80dp"
             android:layout_height="80dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +27,7 @@
             app:srcCompat="@drawable/pp_07" />
 
         <TextView
-            android:id="@+id/tv_call_name"
+            android:id="@+id/tvCallName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -36,8 +36,8 @@
             android:textColor="#FFFFFF"
             android:textSize="18dp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/iv_call_benutzerbild"
-            app:layout_constraintTop_toTopOf="@+id/iv_call_benutzerbild" />
+            app:layout_constraintStart_toEndOf="@+id/ivCallBenutzerbild"
+            app:layout_constraintTop_toTopOf="@+id/ivCallBenutzerbild" />
 
         <TextView
             android:id="@+id/tv_call_time"
@@ -48,10 +48,10 @@
             android:text="TextView"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/iv_call_benutzerbild" />
+            app:layout_constraintStart_toEndOf="@+id/ivCallBenutzerbild" />
 
         <ImageView
-            android:id="@+id/iv_call_pfeil"
+            android:id="@+id/ivCallPfeil"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:rotation="0"
