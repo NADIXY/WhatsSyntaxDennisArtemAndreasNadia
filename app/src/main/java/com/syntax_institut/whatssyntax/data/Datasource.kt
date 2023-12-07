@@ -107,8 +107,10 @@ class Datasource {
         ))
     )
 
+    val name: String = chatList.first().contact.name
+
     fun getCalls(): List<Call> {
-        return callList
+        return callList.sortedByDescending { it.time }
     }
 
     fun getChats(): List<Chat> {
@@ -116,7 +118,18 @@ class Datasource {
     }
 
     fun getContacts(): List<Contact> {
-        return contactList
+        val (ohneStatus, mitStatus) = contactList.partition { it.status?.text.isNullOrBlank() }
+
+        // Funktion, um das Bild zu ändern, wenn der Status null ist
+        val updateImage: (Contact) -> Contact = { contact ->
+            contact // Gib immer das Contact-Objekt zurück
+        }
+
+
+        // Aktualisiere die Liste der Kontakte mit der Lambda-Funktion
+        val kontakteMitAktualisiertemBild = ohneStatus.map(updateImage)
+        return mitStatus + kontakteMitAktualisiertemBild
+
     }
 
     fun getProfile(): Profile {

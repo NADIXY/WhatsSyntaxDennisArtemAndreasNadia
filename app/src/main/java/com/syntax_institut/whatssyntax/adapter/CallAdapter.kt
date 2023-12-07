@@ -42,21 +42,28 @@ class CallAdapter(
             // Wenn der Status falsch ist, ändere die Pfeilfarbe auf rot und drehe ihn entsprechend
             holder.binding.ivCallPfeil.setImageResource(R.drawable.icon_call_missed)
         }
+        holder.binding.tvCallTime.text = call.time
 
+        /* holder.binding.ivCallPfeil.setImageResource(
+             if (call.incoming) {
+             holder.binding.ivCallPfeil.rotation = 190f
+                     R.drawable.icon_call_missed
+                 if (call.accepted) {
+                     holder.binding.ivCallPfeil.rotation = 190f
+                     R.drawable.icon_call_accepted
+                 }
 
-
+                     holder.binding.contactCard.setOnClickListener {
+                         val phoneNumber = call.contact.number
+                         val intent = Intent(Intent.ACTION_DIAL)
+                         intent.data = parse("tel:$phoneNumber")
+                         CompletedContinuation.context.startActivity(intent)
+                     }
+                     */
 
         //Überprüft ob eingehender oder ausgehender Anrufe und Pfeil wird gedreht
 
         //image Pfeil drehen
-
-
-
-
-
-
-
-
 
 
         holder.binding.contactCard.setOnClickListener {
@@ -71,4 +78,30 @@ class CallAdapter(
     override fun getItemCount(): Int {
         return dataset.size
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
