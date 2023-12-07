@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
 import com.syntax_institut.whatssyntax.adapter.StatusAdapter
+import com.syntax_institut.whatssyntax.data.Datasource
 import com.syntax_institut.whatssyntax.databinding.FragmentContactBinding
 
 
@@ -26,6 +27,16 @@ class ContactFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        var position = 0
+        arguments?.let {
+            position = it.getInt("position")
+        }
+        val contacts = Datasource().getContacts()
+        val item = contacts[position]
+        binding.nameTV.text = item.name
+        binding.ivsettingsperson.setImageResource(item.image)
+
 
     }
 }

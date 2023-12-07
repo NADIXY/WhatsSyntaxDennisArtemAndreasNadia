@@ -25,9 +25,11 @@ class StatusAdapter (
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
+
         holder.binding.tvItemName.text = item.name
+        holder.binding.imageView.setImageResource(item.image)
         holder.binding.contactCard.setOnClickListener {
-           holder.itemView.findNavController().navigate(StatusFragmentDirections.actionStatusFragmentToContactFragment(position))
+            holder.itemView.findNavController().navigate(StatusFragmentDirections.actionStatusFragmentToContactFragment(position))
         }
 
     }
