@@ -108,6 +108,7 @@ class Datasource {
     )
 
     val name: String = chatList.first().contact.name
+    val name1: String = chatList.random().contact.name
 
     fun getCalls(): List<Call> {
         return callList.sortedByDescending { it.time }

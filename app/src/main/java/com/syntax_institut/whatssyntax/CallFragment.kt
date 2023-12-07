@@ -25,7 +25,7 @@ class CallFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.rvCall.adapter = CallAdapter(Datasource().getCalls())
+        binding.rvCall.adapter = CallAdapter(requireContext(),Datasource().getCalls())
 
 
     }
